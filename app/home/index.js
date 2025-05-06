@@ -1,4 +1,4 @@
-import { AntDesign, Entypo, Feather, Ionicons } from '@expo/vector-icons';
+import { AntDesign, Entypo, Feather, Ionicons, Octicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from "expo-router";
 import { StatusBar } from 'expo-status-bar';
@@ -68,7 +68,7 @@ const index = () => {
                 <Text style={{ marginTop: 7, fontWeight: "600" }}>Marcar presença</Text>
               </Pressable>
             </View>
-            <View>
+            <View style={{ marginTop: 20, backgroundColor: "#FFF", paddingHorizontal: 10, paddingVertical: 10, borderRadius: 7 }}>
               <Pressable style={{
                 backgroundColor: "#00c6a9",
                 borderRadius: 6,
@@ -83,11 +83,50 @@ const index = () => {
                 <View style={{ padding: 7, width: 45, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
                   <Ionicons name="newspaper-outline" size={24} color="black" />
                 </View>
-                <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: "600", color: "#FFF" }}>Relatório de presença</Text>
+                <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: "600", color: "#FFF", flex: 1, }}>Relatório de presença</Text>
                 <View style={{ width: 35, height: 35, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
                   <Entypo name="chevron-right" size={24} color="black" />
                 </View>
               </Pressable>
+              <Pressable style={{
+                backgroundColor: "#00c6a9",
+                borderRadius: 6,
+                padding: 10,
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                alignItems: "center",
+                marginVertical: 10
+              }}>
+
+                <View style={{ padding: 7, width: 45, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
+                  <Octicons name="repo-pull" size={24} color="black" />
+                </View>
+                <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: "600", color: "#FFF", flex: 1, }}>Relatório Resumido</Text>
+                <View style={{ width: 35, height: 35, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
+                  <Entypo name="chevron-right" size={24} color="black" />
+                </View>
+              </Pressable>
+              <Pressable style={{
+                backgroundColor: "#00c6a9",
+                borderRadius: 6,
+                padding: 10,
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                alignItems: "center",
+                marginVertical: 10
+              }}>
+
+                <View style={{ padding: 7, width: 45, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
+                  <Octicons name="report" size={24} color="black" />
+                </View>
+                <Text style={{ marginLeft: 10, fontSize: 16, fontWeight: "600", color: "#FFF", flex: 1, }}>Relatórios Gerados</Text>
+                <View style={{ width: 35, height: 35, borderRadius: 7, backgroundColor: "#FFF", alignItems: "center", justifyContent: "center" }}>
+                  <Entypo name="chevron-right" size={24} color="black" />
+                </View>
+              </Pressable>
+
             </View>
           </View>
         </LinearGradient>
